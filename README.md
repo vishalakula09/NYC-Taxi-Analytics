@@ -1,7 +1,47 @@
 
-# 🚕 NYC Yellow Taxi Analytics | Python, SQL & Power BI
+<div align="center">
 
-## 📌 Project Overview
+# NYC Yellow Taxi Analytics
+
+### End-to-End Data Analytics | Python · MySQL · Power BI
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Data Analytics](https://img.shields.io/badge/Data_Analytics-34536B?style=flat-square)
+
+**2.87 Million Trips Analysed | January 2024 | Three-Page Power BI Dashboard**
+
+A comprehensive analysis of NYC Yellow Taxi trip data, transforming millions of records into actionable transportation and business insights.
+
+</div>
+
+---
+
+## Dashboard Preview
+
+![NYC Taxi Executive Overview](Images/01_executive_overview.png)
+
+*Executive overview showing taxi activity, recorded charges, trip characteristics, and pickup demand.*
+
+**[Explore All Dashboard Pages](#power-bi-dashboard)**
+
+---
+
+## Project Navigation
+
+[Overview](#project-overview) ·
+[Business Objectives](#business-objectives) ·
+[Methodology](#project-methodology) ·
+[Key Findings](#key-findings--business-insights) ·
+[Dashboards](#power-bi-dashboard) ·
+[Project Structure](#project-structure) ·
+[Reproduction Guide](#how-to-reproduce-the-analysis)
+
+---
+
+## Project Overview
 
 This project analyses **New York City Yellow Taxi trip data from January 2024** to uncover patterns in passenger demand, trip characteristics, and recorded financial activity.
 
@@ -13,7 +53,7 @@ The goal is to transform large-scale transportation data into actionable insight
 
 ---
 
-## 🎯 Business Objectives
+## Business Objectives
 
 This project addresses five key business questions:
 
@@ -25,28 +65,28 @@ This project addresses five key business questions:
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 | Technology | Application |
 |------------|-------------|
-| Python | Data cleaning, preprocessing, exploratory analysis, and feature engineering |
-| Pandas & NumPy | Data manipulation, filtering, and aggregation |
-| MySQL | Data validation, analytical queries, and business reporting |
-| Power BI | Interactive dashboards, DAX measures, and KPI visualisation |
-| Jupyter Notebook | Reproducible analytical workflow |
-| VS Code | Development and project organisation |
-| Git & GitHub | Version control and project documentation |
+| **Python** | Data cleaning, preprocessing, exploratory analysis, and feature engineering |
+| **Pandas & NumPy** | Data manipulation, filtering, and aggregation |
+| **MySQL** | Data validation, analytical queries, and business reporting |
+| **Power BI** | Interactive dashboards, DAX measures, and KPI visualisation |
+| **Jupyter Notebook** | Reproducible analytical workflow |
+| **VS Code** | Development and project organisation |
+| **Git & GitHub** | Version control and project documentation |
 
 ---
 
-## 📂 Data Source
+## Data Source
 
 **Provider:** New York City Taxi and Limousine Commission (NYC TLC)
 
 **Dataset:** January 2024 Yellow Taxi Trip Records
 
 **Official Source:**
-https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+[NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 The dataset contains:
 
@@ -64,11 +104,19 @@ The Taxi Zone Lookup dataset was used to identify pickup and drop-off boroughs.
 
 ---
 
-## 🔄 Project Methodology
+## Project Methodology
 
 The project follows an end-to-end analytical workflow:
 
-**Data Collection → Data Cleaning → Feature Engineering → MySQL Analysis → Power BI Dashboard → Business Insights**
+<div align="center">
+
+**Data Collection → Data Cleaning → Feature Engineering**
+
+**↓**
+
+**MySQL Analysis → Power BI Dashboard → Business Insights**
+
+</div>
 
 ### 1. Data Collection
 
@@ -141,21 +189,21 @@ Developed a **three-page interactive Power BI report**.
 
 ---
 
-## 📊 Key Findings & Business Insights
+## Key Findings & Business Insights
 
 The following findings are based on **2,867,591 cleaned NYC Yellow Taxi trips from January 2024**.
 
 ### 1. Overall Trip Activity
 
-| KPI | Result |
-|-----|--------|
-| Total Trips | 2,867,591 |
+| Key Performance Indicator | Result |
+|---------------------------|-------:|
+| **Total Trips** | **2,867,591** |
 | Total Recorded Charges | $78.39 Million |
 | Average Recorded Charge per Trip | $27.34 |
 | Average Trip Distance | 3.29 Miles |
 | Average Trip Duration | 14.96 Minutes |
 
-**Business Insight:**
+**Business Insight**
 
 These metrics establish a baseline for understanding Yellow Taxi activity, average trip characteristics, and recorded charges during January 2024.
 
@@ -164,12 +212,12 @@ They provide a foundation for comparing operational patterns across different pi
 ### 2. Pickup Demand by Borough
 
 | Borough | Pickup Trips | Share of Trips |
-|---------|--------------|----------------|
+|---------|-------------:|---------------:|
 | Manhattan | 2,571,717 | 89.68% |
 | Queens | 257,500 | 8.98% |
 | Brooklyn | 22,240 | 0.78% |
 
-**Business Insight:**
+**Business Insight**
 
 Manhattan accounted for approximately **89.68% of analysed Yellow Taxi pickups**, demonstrating a strong concentration of recorded demand.
 
@@ -179,14 +227,16 @@ The results describe Yellow Taxi activity in the analysed dataset and do not rep
 
 ### 3. Peak Pickup Hours
 
-- **Busiest pickup hour:** 6 PM, with 206,134 trips.
-- **Lowest pickup hour:** 4 AM, with 15,252 trips.
-- **Weekday peak demand:** Approximately 6 PM.
-- **Weekend peak demand:** Approximately 4 PM.
+| Metric | Finding |
+|--------|---------|
+| Busiest Pickup Hour | 6 PM — 206,134 trips |
+| Lowest Pickup Hour | 4 AM — 15,252 trips |
+| Weekday Peak Demand | Approximately 6 PM |
+| Weekend Peak Demand | Approximately 4 PM |
 
 The weekday and weekend comparisons are based on average trips per day.
 
-**Business Insight:**
+**Business Insight**
 
 Pickup demand varies throughout the day, with different patterns on weekdays and weekends.
 
@@ -200,7 +250,7 @@ These findings may help transportation operators identify periods when driver av
 - Trips beginning at **5 AM** had the highest average distance, approximately **6.23 miles**.
 - Average trip duration increased across the five trip-distance categories.
 
-**Business Insight:**
+**Business Insight**
 
 Trip characteristics vary according to pickup time and travel distance.
 
@@ -217,7 +267,7 @@ The financial analysis investigates:
 - Average recorded charges for JFK Airport, LaGuardia Airport, and other Queens pickup locations.
 - Variations in financial metrics across trip categories.
 
-**Business Insight:**
+**Business Insight**
 
 Examining recorded charges alongside trip locations and payment methods helps identify differences in trip financial characteristics.
 
@@ -225,31 +275,37 @@ These comparisons provide descriptive insights rather than direct measurements o
 
 ---
 
-## 📈 Power BI Dashboard
+## Power BI Dashboard
 
 The Power BI report contains three interactive pages covering overall taxi activity, demand patterns, and financial analysis.
 
-### 1. Executive Overview
+### 01 — Executive Overview
 
 Provides a high-level summary of key performance indicators, pickup activity, and borough-level demand.
 
 ![NYC Taxi Executive Overview](Images/01_executive_overview.png)
 
-### 2. Demand Analysis
+### 02 — Demand Analysis
 
 Explores hourly pickup patterns, weekday versus weekend demand, trip duration, and distance characteristics.
 
 ![NYC Taxi Demand Analysis](Images/02_demand_analysis.png)
 
-### 3. Financial Analysis
+### 03 — Financial Analysis
 
 Examines recorded charges, payment methods, borough comparisons, and airport pickup characteristics.
 
 ![NYC Taxi Financial Analysis](Images/03_financial_analysis.png)
 
+**Power BI Report File:**
+
+[View Power BI Dashboard File](Dashboard/NYC_Taxi_Analytics_Dashboard.pbix)
+
+*Note: The Power BI file can be downloaded and opened in Power BI Desktop.*
+
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 NYC-Taxi-Analytics/
@@ -282,7 +338,7 @@ NYC-Taxi-Analytics/
 
 ---
 
-## 🚀 How to Reproduce the Analysis
+## How to Reproduce the Analysis
 
 ### Prerequisites
 
@@ -302,7 +358,7 @@ cd NYC-Taxi-Analytics
 
 Download the January 2024 Yellow Taxi trip records and Taxi Zone Lookup CSV from the official NYC Taxi and Limousine Commission website:
 
-https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+[NYC TLC Official Data Source](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 Create a `Data/` folder in the project directory if it does not already exist.
 
@@ -387,7 +443,7 @@ Refresh the dataset to load the data into the dashboard.
 
 ---
 
-## ⚠️ Project Limitations
+## Project Limitations
 
 - The analysis covers January 2024 only and does not establish longer-term or seasonal trends.
 - Data quality filters exclude some original records, so results represent the cleaned dataset.
@@ -399,30 +455,35 @@ Refresh the dataset to load the data into the dashboard.
 
 ---
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
-This project demonstrates practical capabilities in:
-
-- End-to-end data analytics
-- Large-scale data cleaning and preprocessing
-- Exploratory data analysis
-- Feature engineering
-- SQL querying and aggregation
-- Data validation
-- Business intelligence and KPI reporting
-- Power BI dashboard development
-- Analytical interpretation and communication
-- GitHub project documentation
+| Skill Area | Capabilities |
+|------------|--------------|
+| Data Preparation | Data cleaning, preprocessing, feature engineering |
+| Python Analytics | Pandas, NumPy, exploratory data analysis |
+| SQL Analytics | Queries, aggregations, analytical reporting |
+| Data Validation | Quality checks and consistency verification |
+| Business Intelligence | Power BI, DAX, KPI reporting |
+| Data Visualisation | Dashboard development and analytical charts |
+| Business Analysis | Identifying patterns and communicating findings |
+| Documentation | Reproducible workflows and GitHub documentation |
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Vishal Akula**
 
-Master of Data Science | Deakin University
+Master of Data Science — Deakin University, Australia
 
 Data Analyst | Business Intelligence | Python | SQL | Power BI
 
-- [LinkedIn](https://www.linkedin.com/in/vishal-akula-6a80a8273/)
-- [GitHub](https://github.com/vishalakula09)
+[LinkedIn](https://www.linkedin.com/in/vishal-akula-6a80a8273/) · [GitHub](https://github.com/vishalakula09)
+
+---
+
+<div align="center">
+
+**Turning complex data into meaningful business insights.**
+
+</div>
